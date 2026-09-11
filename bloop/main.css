@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+html {
+    height: 100%;
+    background-color: #468BA4;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Londrina Solid', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    background-image: url("background.png");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+a {
+    color: #1DE6F0;
+}
+
+h2 {
+    color: #FFC86B;
+}
+
+p>strong {
+    color: #FFC86B;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    align-self: center;
+    width: 560px;
+    height: 315px;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+.video-container {
+    margin-top: 24px;
+    overflow: hidden;
+    position: relative;
+    width: 75vw;
+    display: flex;
+    align-self: center;
+    max-width: 800px;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
